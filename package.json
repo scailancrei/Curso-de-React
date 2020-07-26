@@ -1,0 +1,51 @@
+{
+  "name": "curso-de-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "lint": "eslint --fix src/**/*.{js,jsx}",
+    "format": "prettier --write \"*.{js,jsx,json,css}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvYuste/react-course-wishlist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlvYuste/react-course-wishlist/issues"
+  },
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "linebreak-style": "off"
+  },
+  "homepage": "https://github.com/AlvYuste/react-course-wishlist#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint"
+    ]
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "prettier": {
+    "semi": true
+  }
+}
